@@ -1,4 +1,4 @@
-import Character from '../app';
+import Character from '../character';
 import Bowerman from '../bowerman';
 
 test('Проверяем работу родителя Character', () => {

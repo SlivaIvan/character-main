@@ -4,7 +4,7 @@ export default class Character {
       throw new Error('имя должно содержать от 2 до 10 сиволов');
     }
     const types = ['Bowerman', 'Swordsman', 'Magician', 'Deamon', 'Undead', 'Zombie'];
-    if (types.includes(type) === false) {
+    if (!types.includes(type)) {
       throw new Error('тип не установлен');
     }
     this.name = name;
@@ -16,12 +16,11 @@ export default class Character {
   levelUp() {
     if (this.health === 0) {
       throw new Error('нельзя повысить левел умершего');
-    } else {
-      this.level += 1;
-      this.attack *= 1.2;
-      this.defence *= 1.2;
-      this.health = 100;
     }
+    this.level += 1;
+    this.attack *= 1.2;
+    this.defence *= 1.2;
+    this.health = 100;
   }
 
   damage(points) {

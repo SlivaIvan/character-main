@@ -1,4 +1,4 @@
-import Character from './app';
+import Character from './character';
 
 export default class Undead extends Character {
   constructor(name, type = 'Undead') {

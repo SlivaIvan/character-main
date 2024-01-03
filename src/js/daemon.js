@@ -1,4 +1,4 @@
-import Character from './app';
+import Character from './character';
 
 export default class Deamon extends Character {
   constructor(name, type = 'Deamon') {
